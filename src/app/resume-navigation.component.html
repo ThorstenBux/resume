@@ -1,0 +1,5 @@
+<ul class="navigation">
+  <li *ngFor="let navItem of navigation" (click)="onSelectNavItem(navItem)" [class.selected]="navItem === selectedNavItem">
+    {{navItem | uppercase}}
+  </li>
+</ul>

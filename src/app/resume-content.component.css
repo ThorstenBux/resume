@@ -1,0 +1,58 @@
+.resume-content {
+    text-align: left;
+    border-left: solid;
+    border-left-color: #a3a3a3;
+    border-left-width: 2px;
+    padding-top: 25px;
+}
+
+.resume-content ul{
+    padding-left: 0px;
+    margin-left: -4px;
+}
+
+
+.resume-content li{
+    padding-top: .1em;
+    padding-bottom: 0.1em;
+    padding-left: 15px;
+    list-style-image: url('../assets/list-style-nav.png'); 
+}
+
+.resume-content .highlights li{
+    list-style-type: circle !important;
+    list-style-image: initial;
+    margin-left: 20px;
+}
+
+.resume-content .date {
+    font-size: 10pt;
+    margin: 8;
+    margin-bottom: 10px;
+}
+
+.resume-content .company, .name{
+    font-size: 14pt;
+}
+
+.resume-content .description {
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+.resume-content .position {
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+.resume-content .summary {
+    margin-bottom: 10px;
+}
+
+.resume-content .highlights{
+    margin-bottom: 10px;
+}
+
+.resume-content .url{
+    /* display: block; */
+}
