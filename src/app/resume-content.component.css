@@ -1,25 +1,31 @@
 .resume-content {
     text-align: left;
     border-left: solid;
-    border-left-color: #a3a3a3;
+    border-left-color: #efefef;
     border-left-width: 2px;
-    padding-top: 25px;
+    margin-top: 25px;
+    padding-top: 12px;
 }
 
 .resume-content ul{
     padding-left: 0px;
-    margin-left: -4px;
+    margin-left: -1px;
 }
 
 
 .resume-content li{
+    list-style:none;
     padding-top: .1em;
     padding-bottom: 0.1em;
     padding-left: 15px;
-    list-style-image: url('../assets/list-style-nav.png'); 
+    list-style-image: url('../assets/ic_arrow_forward_black_24dp_1x.png');  
 }
 
-.resume-content .highlights li{
+.resume-content .highlights, .courses{
+    margin-bottom: 10px;
+}
+
+.resume-content .highlights li, .courses li, .keywords li, .roles li{
     list-style-type: circle !important;
     list-style-image: initial;
     margin-left: 20px;
@@ -27,29 +33,25 @@
 
 .resume-content .date {
     font-size: 10pt;
-    margin: 8;
     margin-bottom: 10px;
 }
 
-.resume-content .company, .name{
-    font-size: 14pt;
+.resume-content .company, .name, .institution, .language{
+    font-size: 12pt;
 }
 
-.resume-content .description {
+.resume-content .description, .area, .fluency {
     font-size: 10pt;
     margin-bottom: 10px;
 }
 
-.resume-content .position {
+.resume-content .position, .studyType, .level {
     font-size: 14pt;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
 .resume-content .summary {
-    margin-bottom: 10px;
-}
-
-.resume-content .highlights{
     margin-bottom: 10px;
 }
 
