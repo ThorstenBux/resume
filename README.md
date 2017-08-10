@@ -1,3 +1,9 @@
+#TODO:
+
+# For using resume-cli and exporting the resume to PDF I need to create my own template using ```jsonresume-theme-boilerplate``` and add it to the ```jsonresume-cli``` project. 
+
+# Once step 1 works I would need to integrate that into this project as download function.
+
 # Resume
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
