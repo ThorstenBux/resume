@@ -16,6 +16,7 @@ export class ResumeService {
     }
 
     getResumeDetail(identifier:string){
+        console.log("ResumeService identifier: " + identifier);
         return this.getResumeData().then(resume_data => resume_data[identifier]);
     }
 }

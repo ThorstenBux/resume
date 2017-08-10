@@ -187,7 +187,7 @@ export class Resume {
   /**
    * List out your professional skill-set
    */
-  skills?: {
+  "personal skills"?: {
           /**
        * e.g. Web Development
        */
@@ -202,6 +202,21 @@ export class Resume {
   keywords?: string[];
       [k: string]: any;
     }[];
+  "technical skills"?:{
+          /**
+       * e.g. Web Development
+       */
+  name?: string;
+          /**
+       * e.g. Master
+       */
+  level?: string;
+          /**
+       * List some keywords pertaining to this skill
+       */
+  keywords?: string[];
+      [k: string]: any;
+  }[];
   /**
    * List any other languages you speak
    */
