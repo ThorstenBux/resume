@@ -1,15 +1,14 @@
 .resume-content {
     text-align: left;
     border-left: solid;
-    border-left-color: #efefef;
+    border-left-color: #d3d6db;
     border-left-width: 2px;
     margin-top: 25px;
-    padding-top: 12px;
 }
 
 .resume-content ul{
     padding-left: 0px;
-    margin-left: -1px;
+    margin-left: -5px;
 }
 
 

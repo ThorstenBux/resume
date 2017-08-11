@@ -2,3 +2,14 @@
 /* * {
     font-family: Zolano Sans BTN;
 } */
+
+body{
+    background: url(./assets/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #ebebeb;
+}
+
+/*This is a bootstrap class  */
+.page-header{
+    border-bottom: 0px;
+}
