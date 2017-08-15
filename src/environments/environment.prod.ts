@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  webServiceUrl: "http://resume-webservice.azurewebsites.net/v1/resume"
 };

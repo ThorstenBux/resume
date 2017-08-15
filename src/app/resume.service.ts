@@ -5,10 +5,13 @@ import { resume_data } from "./mock-resume";
 import { Resume } from "./classes/resume";
 import { Headers, Http } from "@angular/http";
 
+import { environment } from "../environments/environment";
+
+
 
 @Injectable()
 export class ResumeService {
-    private resumeServiceURL = "http://localhost:3000/v1/resume";
+    private resumeServiceURL = environment.webServiceUrl;
 
     constructor(private http: Http) {}
     getResumeData(): Promise<Resume> {
