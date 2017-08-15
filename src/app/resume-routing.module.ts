@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
 import { ResumeContentComponent } from "./resume-content.component";
 
 
 const routes = [
-      { path: '', redirectTo: '/', pathMatch: 'full'},
-      { path: 'resume-content/:resumeItem', component: ResumeContentComponent},
+      { path: "", redirectTo: "/", pathMatch: "full"},
+      { path: "resume-content/:resumeItem", component: ResumeContentComponent},
     ];
 
 @NgModule({
@@ -15,6 +15,6 @@ const routes = [
   ],
   exports : [RouterModule]
 })
-export class ResumeRoutingModule{
+export class ResumeRoutingModule {
 
 }

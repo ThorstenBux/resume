@@ -1,28 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
-import { Resume } from './classes/resume';
+import { Resume } from "./classes/resume";
 import { ResumeService } from "./resume.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
   providers: [ResumeService]
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   resume: Resume;
   title: string;
 
-  constructor(private resumeService:ResumeService){}
+  constructor(private resumeService: ResumeService) {}
 
   ngOnInit(): void {
-    this.getResume();
+    //  this.getResume();
   }
 
-  getResume(){
-    this.resumeService.getResumeData().then(resumeData => this.resume = resumeData ).then(resumeData => this.initScreen(resumeData));
+  getResume() {
+    this.resumeService.getResumeData().then(resumeData => this.resume = resumeData).then(() => this.initScreen());
   }
-  initScreen(resumeData){
-    this.title = `${this.resume.basics.name}'s resume`;
+  initScreen() {
+      console.log("AppComponent: " + this.resume);
+    // this.title = `${this.resume.basics.name}'s resume`;
   }
 }
