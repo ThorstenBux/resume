@@ -17,9 +17,11 @@ export class ResumeContentComponent implements OnInit {
     resumeItem: string;
     resumeDetail: {};
 
+    // Inject ResumeService and ActivatedRoute into this component
     constructor(private resumeService: ResumeService, private route: ActivatedRoute) { }
 
     ngOnInit() {
+        // Evaluate the URL/route to see the entry point and to load data respectively
         this.route.paramMap
         .switchMap( (params: ParamMap) => {
             this.resumeItem = params.get("resumeItem");
@@ -31,13 +33,14 @@ export class ResumeContentComponent implements OnInit {
         );
     }
 
+    // Get all the keys of the loaded resume content. Needed to evaluate which key the HTML processes to use the correct styling
     getObjectKeys(pos: number): string[] {
         return Object.keys(this.resumeDetail[pos]);
     }
 
+    // Handle arrays differently in HTML
     itemIsArray(object): boolean {
         return Array.isArray(object);
     }
 }
 
-//

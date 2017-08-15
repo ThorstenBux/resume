@@ -16,6 +16,7 @@ export class ResumeHeaderComponent implements OnInit {
         this.getResumeHeaderData();
     }
 
+    // Load top 'basics' section from the resume
     getResumeHeaderData() {
         this.resumeService.getResumeDetail("basics").then(
             resumeData => {

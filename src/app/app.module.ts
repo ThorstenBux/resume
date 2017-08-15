@@ -22,9 +22,11 @@ import { CustomDate } from "./custom-date.pipe";
   ],
   imports: [
     BrowserModule,
+    // Contains the URL-routing information
     ResumeRoutingModule,
     HttpModule
   ],
+  // Provides the ResumeService as dependency injection to all components
   providers: [ResumeService],
   bootstrap: [AppComponent]
 })

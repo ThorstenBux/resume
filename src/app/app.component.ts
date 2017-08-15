@@ -1,29 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
-import { Resume } from "./classes/resume";
-import { ResumeService } from "./resume.service";
-
 @Component({
+    // The HTML-tag (selector) which needs to be insert into the HTML to load this component
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"],
-  providers: [ResumeService]
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent implements OnInit {
-  resume: Resume;
-  title: string;
+export class AppComponent {
 
-  constructor(private resumeService: ResumeService) {}
-
-  ngOnInit(): void {
-    //  this.getResume();
-  }
-
-  getResume() {
-    this.resumeService.getResumeData().then(resumeData => this.resume = resumeData).then(() => this.initScreen());
-  }
-  initScreen() {
-      console.log("AppComponent: " + this.resume);
-    // this.title = `${this.resume.basics.name}'s resume`;
-  }
 }
