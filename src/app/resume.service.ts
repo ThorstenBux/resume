@@ -1,7 +1,6 @@
 import "rxjs/add/operator/toPromise";
 
 import { Injectable } from "@angular/core";
-import { resume_data } from "./mock-resume";
 import { Resume } from "./classes/resume";
 import { Headers, Http } from "@angular/http";
 
