@@ -9,6 +9,11 @@ body{
     background-color: #ebebeb;
 }
 
+@font-face {
+    font-family: myZolano;
+    src: url(./assets/zolano-sans-btn.ttf);
+}
+
 /*This is a bootstrap class  */
 .page-header{
     border-bottom: 0px;
