@@ -1,6 +1,8 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpModule } from "@angular/http";
+import { LoadingModule } from "ngx-loading";
+
 
 import { AppComponent } from "./app.component";
 import { ResumeNavigationComponent } from "./resume-navigation.component";
@@ -11,7 +13,6 @@ import { ResumeHeaderComponent } from "./resume-header.component";
 import { ResumeRoutingModule } from "./resume-routing.module";
 
 import { CustomDate } from "./custom-date.pipe";
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { CustomDate } from "./custom-date.pipe";
     BrowserModule,
     // Contains the URL-routing information
     ResumeRoutingModule,
-    HttpModule
+    HttpModule,
+    LoadingModule
   ],
   // Provides the ResumeService as dependency injection to all components
   providers: [ResumeService],

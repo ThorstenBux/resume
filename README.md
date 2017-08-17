@@ -2,6 +2,7 @@
 
 - Check if font is available on other devices -> make font inline
 - To use resume-cli and exporting the resume to PDF I need to create my own template using ```jsonresume-theme-boilerplate``` and add it to the ```jsonresume-cli``` project. 
+- Make resume content editable on the website
 
 # Once step 1 works I would need to integrate that into this project as download function.
 

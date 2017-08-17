@@ -1,3 +1,6 @@
+<div *ngIf="!resumeDataBasics">
+    <ngx-loading [show]="!resumeDataBasics" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+</div>
 <div *ngIf="resumeDataBasics" class="row" style="text-align:left">
   
   <div class="col-md-4">
