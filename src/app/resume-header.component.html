@@ -1,5 +1,6 @@
 <div *ngIf="!resumeDataBasics">
-    <ngx-loading [show]="!resumeDataBasics" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+    A little bit of patience please, I'm running on a shared environment.
+    <ngx-loading [show]="!resumeDataBasics" [config]="{  animationType: ANIMATION_TYPES.wanderingCubes, backdropBorderRadius: '14px' }"></ngx-loading>
 </div>
 <div *ngIf="resumeDataBasics" class="row" style="text-align:left">
   
