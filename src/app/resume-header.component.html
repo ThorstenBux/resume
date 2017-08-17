@@ -11,26 +11,26 @@
     </div>
   <div class="col-md-4" style="text-align:center"> <img width="250" src="{{resumeDataBasics.picture}}"></div>
   <div class="col-md-4" style="margin-top:30px;">
-        <div class="row" style="padding-bottom:31px">
+        <div class="row" style="padding-bottom:31px; padding-left:5px">
             <div class="col-md-8">
                 <span *ngFor="let profile of resumeDataBasics.profiles">
                     <a href="{{profile.url}}" target="_blank"><img width="40px" height="40px" src="./assets/socialMedia/{{profile.network}}.png"></a>
                 </span>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left:5px">
             <!-- <div class="col-md-1 glyphicon glyphicon glyphicon-send" aria-hidden="true"></div> -->
             <div class="col-md-8"><a href="mailto:{{resumeDataBasics.email}}">{{resumeDataBasics.email}}</a></div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left:5px">
             <!-- <div class="col-md-1 glyphicon glyphicon glyphicon-phone" aria-hidden="true"></div> -->
             <div class="col-md-8">{{resumeDataBasics.phone}}</div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left:5px">
             <!-- <div class="col-md-1 glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></div> -->
             <div class="col-md-8">{{resumeDataBasics.location.address}}</div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left:5px">
             <!-- <div class="col-md-1"></div> -->
             <div class="col-md-8">{{resumeDataBasics.location.city}} {{resumeDataBasics.location.countryCode}}</div>
         </div>
