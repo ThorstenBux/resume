@@ -5,12 +5,12 @@
 <div *ngIf="resumeDataBasics" class="row" style="text-align:left">
   
   <div class="col-md-4">
-       <div class="page-header">
+    <div class="page-header">
         <h1>{{resumeDataBasics.name}} <br/> <small>{{resumeDataBasics.label}}</small></h1>
-       </div>
     </div>
+  </div>
   <div class="col-md-4" style="text-align:center"> <img width="250" src="{{resumeDataBasics.picture}}"></div>
-  <div class="col-md-4" style="margin-top:30px;">
+    <div class="col-md-4" style="margin-top:30px;">
         <div class="row" style="padding-bottom:31px; padding-left:5px">
             <div class="col-md-8">
                 <span *ngFor="let profile of resumeDataBasics.profiles">
