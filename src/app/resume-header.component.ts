@@ -4,6 +4,7 @@ import { ResumeService } from "./resume.service";
 import { ANIMATION_TYPES } from "ngx-loading";
 
 
+
 @Component({
     selector: "app-resume-header",
     templateUrl: "resume-header.component.html"

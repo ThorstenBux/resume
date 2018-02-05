@@ -19,8 +19,8 @@ export class ResumeNavigationComponent implements OnInit {
     }
 
     // Load top level entries and use them for navigation
-    getTopLevelResumeEntries(from: number= 0, to: number=undefined){
-        this.resumeService.getTopLevelResumeData(from).then(
+    getTopLevelResumeEntries(from: number= 0, to?: number) {
+        this.resumeService.getTopLevelResumeData().then(
             resumeTopLevelData => {
                 this.navigation = resumeTopLevelData.slice(from, to);
                 console.log(this.navigation);

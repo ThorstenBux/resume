@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-dist": "http-server ./dist",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -21,7 +22,9 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular2-click-to-edit": "^1.0.52",
     "core-js": "^2.4.1",
+    "http-server": "^0.10.0",
     "ngx-loading": "^1.0.5",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"

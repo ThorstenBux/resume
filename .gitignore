@@ -41,9 +41,9 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
-src/app/mock-resume.ts
+
+
 src/app/resume.json
+Thorsten_circle.xcf
 
-
-mock-resume.ts
 resume.json
