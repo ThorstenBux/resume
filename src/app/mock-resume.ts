@@ -63,10 +63,11 @@ export const resume_data: Resume = {
            video tutorials, maintaining the forum and managing social media accounts.",
         "highlights": [
           "Bluetooth based configuration app to enable tracking on Raspberry PI",
-          "Integrate JSARToolKit into Realweb",
+          "Integrate two large JavaScript components (JSARToolKit, Monaco Editor) into existing JavaScript application",
           "Refactor and update JSARToolKit to enable iOS support",
           "Reestablish the community to the new artoolkitX brand",
-          "Integrate monaco editor into Realweb"
+          "Setup JavaScript project structure",
+          "Consulting on using WebPack to manage dependencies and bundle the web-app"
         ]
     },
     {
@@ -167,6 +168,20 @@ export const resume_data: Resume = {
   ],
   "projects": [
     {
+        "name": "RealWeb",
+        "description": "Create a web based augmented reality 3D editor",
+        "highlights": ["Integration of JavaScript component for web based code editing (Monaco)",
+                    "Integration of browser based augmented reality toolkit (JSARToolKit5)",
+                    "Consulting on dependency and build management (WebPack)"],
+        // keywords: ["Android"],
+        "startDate": "2017-09-01",
+        "endDate": "current",
+        "url": "http://www.realmax.com/",
+        "roles": ["Software engineer", "Software architect", "DevOps"],
+        "company": "Realmax"
+        // type: "Application"
+    },
+    {
         "name": "artoolkitX",
         "description": "Create a new version of the famous ARToolKit5 framework",
         "highlights": ["Raspberry PI enabled tracker",
@@ -177,7 +192,7 @@ export const resume_data: Resume = {
         "endDate": "current",
         "url": "https://www.artoolkitx.org",
         "roles": ["Software engineer", "Release manager", "Social Media representative"],
-        "company": "Realmax"
+        "company": "artoolkitX"
         // type: "Application"
     },
     {
