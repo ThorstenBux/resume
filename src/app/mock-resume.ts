@@ -16,7 +16,7 @@ export const resume_data: Resume = {
     and several years of experience in creating products in the IoT realm. I have a profound knowledge in software engineering and\
      solution design.</em>",
     "location": {
-      "address": "66 Slater Street",
+      "address": "118 Stapletons Road",
       "postalCode": "8013",
       "city": "Christchurch",
       "countryCode": "NZ",
