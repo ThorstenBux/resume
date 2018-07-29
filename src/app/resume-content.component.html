@@ -6,7 +6,7 @@
                     {{entry.startDate | date:"MMMM y" | uppercase}} - {{entry.endDate | customDate: "MMMM y" | uppercase}}
                 </div>
                 <div *ngIf="entry.date" class="date">
-                    {{entry.date | date:"MMMM y" | uppercase}}
+                    {{entry.date | customDate:"MMMM y" | uppercase}}
                 </div>
             
                 <div *ngFor="let key of getObjectKeys(i); let z = index">

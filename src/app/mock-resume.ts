@@ -660,6 +660,11 @@ export const resume_data: Resume = {
   ],
   "references": [
     {
+        "name": "Philip Lamb",
+        "reference": "CTO of artoolkitX and the ARToolKit project at DAQRI",
+        "date": "current"
+    },
+    {
       "name": "Go Media Academy",
       "reference": "As a Community interest company, we exist for the benefit of children and young people in our communities.\
        Offering new innovative media technologies and providing unique experiences for everyone. The Augmented Reality Web application \

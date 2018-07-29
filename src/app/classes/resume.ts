@@ -256,6 +256,7 @@ export class Resume {
          * The date of the reference
          */
   date: string;
+  phone?: string;
   }[];
   /**
    * Specify career projects
