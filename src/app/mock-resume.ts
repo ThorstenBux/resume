@@ -12,7 +12,7 @@ export const resume_data: Resume = {
      The way I empower people is by creating products that aim for ease of use, excitement and simplicity.<br><br>\
      I have an academic background in software architecture and computer science with emphasis on 2D and 3D content\
     creation for desktop and mobile.<br>\
-    I have more then ten years of work experience in information technology, including 5 years of experience in augmented reality\
+    I have more than ten years of work experience in information technology, including 5 years of experience in augmented reality\
     and several years of experience in creating products in the IoT realm. I have a profound knowledge in software engineering and\
      solution design.</em>",
     "location": {
