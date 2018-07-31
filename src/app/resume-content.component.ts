@@ -3,7 +3,7 @@ import { ActivatedRoute, ParamMap } from "@angular/router";
 import { Location } from "@angular/common";
 
 import { ResumeService } from "./resume.service";
-import "rxjs/add/operator/switchMap";
+import { switchMap } from 'rxjs/operators';
 import { ResumeWork } from "./classes/resumeWork";
 
 
@@ -22,11 +22,10 @@ export class ResumeContentComponent implements OnInit {
 
     ngOnInit() {
         // Evaluate the URL/route to see the entry point and to load data respectively
-        this.route.paramMap
-        .switchMap( (params: ParamMap) => {
+        this.route.paramMap.pipe( switchMap( (params: ParamMap) => {
             this.resumeItem = params.get("resumeItem");
             return this.resumeService.getResumeDetail(params.get("resumeItem"));
-        }).subscribe(
+        })).subscribe(
             resumeDetail => {
                 this.resumeDetail = resumeDetail;
             }

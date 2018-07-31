@@ -1,6 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { HttpModule } from "@angular/http";
+import { HttpClientModule } from "@angular/common/http";
 import { LoadingModule } from "ngx-loading";
 
 
@@ -25,7 +25,7 @@ import { CustomDate } from "./custom-date.pipe";
     BrowserModule,
     // Contains the URL-routing information
     ResumeRoutingModule,
-    HttpModule,
+    HttpClientModule,
     LoadingModule
   ],
   // Provides the ResumeService as dependency injection to all components
